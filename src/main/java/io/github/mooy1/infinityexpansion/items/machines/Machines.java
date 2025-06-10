@@ -448,7 +448,12 @@ public final class Machines {
                 .addRecipe(twoDust, new ItemStack(Material.DIORITE, 4))
                 .addRecipe(twoDust, new ItemStack(Material.GRANITE, 4))
                 .energyPerTick(240).register(plugin);
-
+        
+        // new MachineBlock(Groups.ADVANCED_MACHINES,ADVANCED_FURNACE, RecipeType.ENHANCED_CRAFTING_TABLE, new ItemStack[] {
+        //         SlimefunItems.ELECTRIC_FURNACE_3,SlimefunItems.CARBONADO_EDGED_FURNACE,SlimefunItems.ELECTRIC_FURNACE_3,
+        //         SlimefunItems.ELECTRIC_FURNACE_3,SlimefunItems.CARBONADO_EDGED_FURNACE,SlimefunItems.ELECTRIC_FURNACE_3,
+        //         Materials.MACHINE_CIRCUIT, Materials.MACHINE_CORE, Materials.MACHINE_CIRCUIT,
+        // }).addRecipe(4).energyPerTick(240).register(plugin);
         RandomizedItemStack sixtyFourDust = new RandomizedItemStack(
                 new SlimefunItemStack(SlimefunItems.COPPER_DUST, 64),
                 new SlimefunItemStack(SlimefunItems.ZINC_DUST, 64),
@@ -495,7 +500,7 @@ public final class Machines {
                 .addRecipe(new SlimefunItemStack(SlimefunItems.ALUMINUM_INGOT, 4), new SlimefunItemStack(SlimefunItems.ALUMINUM_DUST, 8))
                 .addRecipe(new SlimefunItemStack(SlimefunItems.LEAD_INGOT, 4), new SlimefunItemStack(SlimefunItems.LEAD_DUST, 8))
                 .addRecipe(new SlimefunItemStack(SlimefunItems.SILVER_INGOT, 4), new SlimefunItemStack(SlimefunItems.SILVER_DUST, 8))
-                .addRecipe(new SlimefunItemStack(SlimefunItems.GOLD_24K, 1), new SlimefunItemStack(SlimefunItems.GOLD_DUST, 8))
+                .addRecipe(new SlimefunItemStack(SlimefunItems.GOLD_24K, 4), new SlimefunItemStack(SlimefunItems.GOLD_DUST, 8))
                 .addRecipe(new ItemStack(Material.IRON_INGOT, 4), new SlimefunItemStack(SlimefunItems.IRON_DUST, 8))
                 .addRecipe(new SlimefunItemStack(SlimefunItems.MAGNESIUM_INGOT, 4), new SlimefunItemStack(SlimefunItems.MAGNESIUM_DUST, 8))
                 .ticksPerOutput(1).energyPerTick(240).register(plugin);
@@ -513,7 +518,7 @@ public final class Machines {
                 .addRecipe(new SlimefunItemStack(SlimefunItems.ALUMINUM_INGOT, 32), new SlimefunItemStack(SlimefunItems.ALUMINUM_DUST, 64))
                 .addRecipe(new SlimefunItemStack(SlimefunItems.LEAD_INGOT, 32), new SlimefunItemStack(SlimefunItems.LEAD_DUST, 64))
                 .addRecipe(new SlimefunItemStack(SlimefunItems.SILVER_INGOT, 32), new SlimefunItemStack(SlimefunItems.SILVER_DUST, 64))
-                .addRecipe(new SlimefunItemStack(SlimefunItems.GOLD_24K, 10), new SlimefunItemStack(SlimefunItems.GOLD_DUST, 64))
+                .addRecipe(new SlimefunItemStack(SlimefunItems.GOLD_24K, 32), new SlimefunItemStack(SlimefunItems.GOLD_DUST, 64))
                 .addRecipe(new ItemStack(Material.IRON_INGOT, 32), new SlimefunItemStack(SlimefunItems.IRON_DUST, 64))
                 .addRecipe(new SlimefunItemStack(SlimefunItems.MAGNESIUM_INGOT, 32), new SlimefunItemStack(SlimefunItems.MAGNESIUM_DUST, 64))
                 .ticksPerOutput(1).energyPerTick(7200).register(plugin);

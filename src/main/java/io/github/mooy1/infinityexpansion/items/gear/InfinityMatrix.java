@@ -28,12 +28,12 @@ public final class InfinityMatrix extends SimpleSlimefunItem<ItemUseHandler> imp
     }
 
     private static void disableFlight(Player p) {
-        p.sendMessage(ChatColor.RED + "Infinity Flight Disabled!");
+        p.sendMessage(ChatColor.RED + "Khả năng bay Vô Cực đã được tắt !");
         p.setAllowFlight(false);
     }
 
     private static void enableFlight(Player p) {
-        p.sendMessage(ChatColor.GREEN + "Infinity Flight Enabled!");
+        p.sendMessage(ChatColor.GREEN + "Khả năng bay Vô Cực đã được bật !");
         p.setAllowFlight(true);
     }
 
@@ -62,7 +62,7 @@ public final class InfinityMatrix extends SimpleSlimefunItem<ItemUseHandler> imp
                     String uuid = ChatColor.stripColor(line).substring(6);
 
                     if (!p.getUniqueId().toString().equals(uuid)) {
-                        p.sendMessage(ChatColor.YELLOW + "You do not own this matrix!");
+                        p.sendMessage(ChatColor.YELLOW + "Bạn không phải chủ nhân của cục Matrix này !");
                         return;
                     }
 
@@ -70,7 +70,7 @@ public final class InfinityMatrix extends SimpleSlimefunItem<ItemUseHandler> imp
                         iterator.remove();
                         meta.setLore(lore);
                         item.setItemMeta(meta);
-                        p.sendMessage(ChatColor.GOLD + "Ownership removed!");
+                        p.sendMessage(ChatColor.GOLD + "Bạn không còn là chủ nhân của Matrix !");
                         disableFlight(p);
 
                     }
@@ -88,7 +88,7 @@ public final class InfinityMatrix extends SimpleSlimefunItem<ItemUseHandler> imp
             lore.add(ChatColor.GREEN + "UUID: " + p.getUniqueId());
             meta.setLore(lore);
             item.setItemMeta(meta);
-            p.sendMessage(ChatColor.GOLD + "Ownership claimed!");
+            p.sendMessage(ChatColor.GOLD + "Bạn đã thở thành chủ nhân của Matrix !");
             enableFlight(p);
         };
     }

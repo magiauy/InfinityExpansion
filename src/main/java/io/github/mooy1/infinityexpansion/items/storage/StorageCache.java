@@ -320,13 +320,27 @@ public final class StorageCache {
                 setEmpty();
             }
             else {
-                int amt = Math.min(this.material.getMaxStackSize(), this.amount - 1);
+                int amt;
+                if (this.material != null) {
+                    amt = Math.min(this.material.getMaxStackSize(), this.amount - 1);
+                } else {
+                    amt = 0; 
+                }
                 this.menu.replaceExistingItem(OUTPUT_SLOT, createItem(amt), false);
                 this.amount -= amt;
             }
         }
         else if (this.amount > 1) {
-            int amt = Math.min(this.material.getMaxStackSize() - outputSlot.getAmount(), this.amount - 1);
+            int amt;
+            if (this.material != null) {
+                amt = Math.min(this.material.getMaxStackSize() - outputSlot.getAmount(), this.amount - 1);
+            }
+            else{
+                // Xử lý trường hợp this.material là null, ví dụ gán giá trị mặc định hoặc ném ngoại lệ
+                amt = 0; // Giá trị mặc định, bạn có thể thay đổi theo yêu cầu của bạn
+                // Hoặc ném ngoại lệ
+                // throw new IllegalStateException("Material is null");
+            }
             if (amt != 0 && matches(outputSlot)) {
                 outputSlot.setAmount(outputSlot.getAmount() + amt);
                 this.amount -= amt;

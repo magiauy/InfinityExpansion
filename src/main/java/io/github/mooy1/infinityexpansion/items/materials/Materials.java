@@ -394,7 +394,7 @@ public final class Materials {
         new Singularity(REDSTONE_SINGULARITY, Material.REDSTONE, 1500).register(plugin);
         new Singularity(LAPIS_SINGULARITY, Material.LAPIS_LAZULI, 1500).register(plugin);
         new Singularity(QUARTZ_SINGULARITY, Material.QUARTZ, 1500).register(plugin);
-        new Singularity(INFINITY_SINGULARITY, INFINITE_INGOT, 100).register(plugin);
+        new Singularity(INFINITY_SINGULARITY, INFINITE_INGOT, 10000).register(plugin);
     }
 
     private static void registerEnhanced(SlimefunItemStack item, ItemStack[] recipe) {

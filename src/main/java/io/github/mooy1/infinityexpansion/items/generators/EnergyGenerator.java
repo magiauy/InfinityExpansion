@@ -82,7 +82,7 @@ public final class EnergyGenerator extends MenuBlock implements EnergyNetProvide
                         Material.GREEN_STAINED_GLASS_PANE,
                         "&aGeneration",
                         "&7Type: &6" + this.type,
-                        "&7Generating: &6" + MachineLore.formatEnergy(gen) + " J/s ",
+                        "&7Generating: &6" + MachineLore.format(gen) + " J/t ",
                         "&7Stored: &6" + MachineLore.format(getCharge(l)) + " J"
                 ));
             }

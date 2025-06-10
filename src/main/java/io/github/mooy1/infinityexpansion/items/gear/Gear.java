@@ -72,7 +72,7 @@ public final class Gear {
     public static final SlimefunItemStack INFINITY_MATRIX = new SlimefunItemStack(
             "INFINITY_MATRIX",
             Material.NETHER_STAR,
-            "&fInfinity Matrix",
+            "&x&F&8&7&D&F&0&l&kl &x&F&8&7&D&F&0&lI&x&F&9&9&0&F&2&ln&x&F&A&A&2&F&4&lf&x&F&B&B&5&F&6&li&x&F&C&C&7&F&9&ln&x&F&D&D&A&F&B&li&x&F&E&E&C&F&D&lt&x&F&F&F&F&F&F&ly &x&C&B&F&B&F&F&lM&x&B&0&F&8&F&F&la&x&9&6&F&6&F&F&lt&x&7&C&F&4&F&F&lr&x&7&3&E&1&F&A&li&x&6&A&C&E&F&5&lx &kl",
             "&6Gives Unlimited Flight",
             "&7Right-Click to enable/disable and claim",
             "&7Crouch and Right-Click to remove ownership",
@@ -224,12 +224,12 @@ public final class Gear {
                 Materials.VOID_INGOT, null, null, null, null, null
         }).register(plugin);
         new InfinityMatrix(Groups.INFINITY_CHEAT, INFINITY_MATRIX, InfinityWorkbench.TYPE, new ItemStack[] {
-                Materials.INFINITE_INGOT, null, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, null, Materials.INFINITE_INGOT,
-                Materials.INFINITE_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.INFINITE_INGOT,
+                Materials.INFINITY_SINGULARITY, null, Materials.INFINITY_SINGULARITY, Materials.INFINITY_SINGULARITY, null, Materials.INFINITY_SINGULARITY,
+                Materials.INFINITY_SINGULARITY, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.INFINITY_SINGULARITY,
                 Materials.VOID_INGOT, Materials.VOID_INGOT, new ItemStack(Material.ELYTRA), new ItemStack(Material.ELYTRA), Materials.VOID_INGOT, Materials.VOID_INGOT,
-                Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT,
-                Materials.INFINITE_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.INFINITE_INGOT,
-                Materials.INFINITE_INGOT, null, Materials.INFINITE_INGOT, Materials.INFINITE_INGOT, null, Materials.INFINITE_INGOT
+                Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.INFINITY_SINGULARITY, Materials.INFINITY_SINGULARITY, Materials.VOID_INGOT, Materials.VOID_INGOT,
+                Materials.INFINITY_SINGULARITY, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.VOID_INGOT, Materials.INFINITY_SINGULARITY,
+                Materials.INFINITY_SINGULARITY, null, Materials.INFINITY_SINGULARITY, Materials.INFINITY_SINGULARITY, null, Materials.INFINITY_SINGULARITY
         }).register(plugin);
         new VeinMinerRune(Groups.MAIN_MATERIALS, VEIN_MINER_RUNE, RecipeType.MAGIC_WORKBENCH, new ItemStack[] {
                 Materials.MAGSTEEL_PLATE, SlimefunItems.PICKAXE_OF_VEIN_MINING, Materials.MAGSTEEL_PLATE,
